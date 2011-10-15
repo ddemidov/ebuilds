@@ -1,1 +1,10 @@
 Some random Gentoo ebuilds
+
+To add the repo to layman's database, to the following:
+
+1. Add https://raw.github.com/ddemidov/ebuilds/master/overlay.xml
+to the "overlays" section of /etc/layman/layman.cfg.
+
+2. Fetch the remote list of database using "layman -f"
+
+3. Add the repo to layman using "layman -a nbigaouette"
