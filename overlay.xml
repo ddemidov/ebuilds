@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <layman>
-    <overlay name="ddemidov" status="unofficial" contact="ddemidov@ksu.ru" type="git" src="demidov@cr-niimm.ksu.ru:git/ebuilds.git">
-	<link>http://cr-niimm.ksu.ru</link>
+    <overlay name="ddemidov" status="unofficial" contact="ddemidov@ksu.ru" type="git" src="git://github.com/ddemidov/ebuilds.git">
+	<link>http://github.com/ddemidov/ebuilds</link>
         <description>ddemidov's ebuilds</description>
     </overlay>
 </layman>
