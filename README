@@ -7,4 +7,4 @@ to the "overlays" section of /etc/layman/layman.cfg.
 
 2. Fetch the remote list of database using "layman -f"
 
-3. Add the repo to layman using "layman -a nbigaouette"
+3. Add the repo to layman using "layman -a ddemidov"
