@@ -6,10 +6,10 @@ EAPI=3
 
 inherit git-2 cmake-utils
 
-EGIT_REPO_URI="demidov@tesla1:git/cudactx.git"
+EGIT_REPO_URI="demidov@cr-niimm.ksu.ru:git/cudactx.git"
 
 DESCRIPTION="CUDA context and worker thread pool"
-HOMEPAGE="http://cr-niimm.ksu.ru:3000"
+HOMEPAGE="http://cr-niimm.ksu.ru"
 SRC_URI=""
 
 LICENSE="GPL-2"
