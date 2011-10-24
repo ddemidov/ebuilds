@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="dev-lang/tcl"
 RDEPEND="${DEPEND}"
 
 INSTALLDIR="/opt"
