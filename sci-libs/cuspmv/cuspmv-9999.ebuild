@@ -7,6 +7,7 @@ EAPI=3
 inherit git-2 cmake-utils
 
 EGIT_REPO_URI="git@cr-niimm.ksu.ru:cuspmv.git"
+EGIT_PROJECT="cuspmv"
 
 DESCRIPTION="Sparse matrix -- vector multiply with CUDA"
 HOMEPAGE="http://cr-niimm.ksu.ru"
