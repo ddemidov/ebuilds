@@ -6,7 +6,8 @@ EAPI=3
 
 inherit git-2 cmake-utils
 
-EGIT_REPO_URI="demidov@cr-niimm.ksu.ru:git/amg.git"
+EGIT_REPO_URI="git@cr-niimm.ksu.ru:amg.git"
+EGIT_PROJECT="amgc"
 
 DESCRIPTION="Algebraic Multigrid solver"
 HOMEPAGE="http://cr-niimm.ksu.ru"
