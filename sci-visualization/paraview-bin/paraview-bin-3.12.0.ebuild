@@ -8,7 +8,7 @@ inherit eutils
 
 DESCRIPTION="ParaView is a powerful scientific data visualization application"
 HOMEPAGE="http://www.paraview.org"
-SRC_URI="http://paraview.org/files/v3.12/ParaView-3.12.0-RC3-Linux-x86_64.tar.gz"
+SRC_URI="http://paraview.org/files/v3.12/ParaView-3.12.0-Linux-x86_64.tar.gz"
 
 LICENSE="paraview GPL-2"
 SLOT="0"
@@ -22,7 +22,7 @@ INSTALLDIR="/opt"
 
 src_install() {
 	dodir /opt || die "Creating directory failed."
-	cp -dpR ParaView-3.12.0-RC3-Linux-x86_64 "${D}"/opt/paraview
+	cp -dpR ParaView-3.12.0-Linux-x86_64 "${D}"/opt/paraview
 
 	echo "PATH=/opt/paraview/bin" >> "${T}"/40${PN}
 	echo "LDPATH=/opt/paraview/lib/paraview-3.12" >> "${T}"/40${PN}
