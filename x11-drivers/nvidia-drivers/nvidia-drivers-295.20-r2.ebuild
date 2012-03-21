@@ -282,6 +282,7 @@ src_prepare() {
 			"${NV_SRC}"/Makefile.kbuild
 
 		epatch "${FILESDIR}"/256.35-unified-arch.patch
+
 		epatch "${FILESDIR}"/kernel-3.3.patch
 
 		# If you set this then it's your own fault when stuff breaks :)
