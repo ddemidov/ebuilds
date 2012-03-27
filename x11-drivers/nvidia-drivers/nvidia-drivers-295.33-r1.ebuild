@@ -283,8 +283,6 @@ src_prepare() {
 			-e 's:-Wsign-compare::g' \
 			"${NV_SRC}"/Makefile.kbuild
 
-		epatch "${FILESDIR}"/256.35-unified-arch.patch
-
 		epatch "${FILESDIR}"/kernel-3.3.patch
 
 		# Fix building with Linux 3.3.x wrt #408841
