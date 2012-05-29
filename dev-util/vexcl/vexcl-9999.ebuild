@@ -6,11 +6,11 @@ EAPI=3
 
 inherit git-2
 
-EGIT_REPO_URI="git://github.com/ddemidov/oclutil.git"
+EGIT_REPO_URI="git://github.com/ddemidov/vexcl.git"
 EGIT_PROJECT="oclutil"
 
-DESCRIPTION="Convenience C++ classes for OpenCL development"
-HOMEPAGE="https://github.com/ddemidov/oclutil"
+DESCRIPTION="Vector expression template library for OpenCL"
+HOMEPAGE="https://github.com/ddemidov/vexcl"
 SRC_URI=""
 
 LICENSE="GPL-2"
@@ -26,6 +26,6 @@ src_unpack() {
 }
 
 src_install() {
-	insinto /usr/include/oclutil
-	doins oclutil/*.hpp
+	insinto /usr/include/vexcl
+	doins vexcl/*.hpp
 }
