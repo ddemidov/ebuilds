@@ -7,7 +7,7 @@ EAPI=3
 inherit git-2
 
 EGIT_REPO_URI="git://github.com/ddemidov/vexcl.git"
-EGIT_PROJECT="oclutil"
+EGIT_PROJECT="vexcl"
 
 DESCRIPTION="Vector expression template library for OpenCL"
 HOMEPAGE="https://github.com/ddemidov/vexcl"
