@@ -6,8 +6,9 @@ EAPI=4
 
 inherit git-2
 
-EGIT_REPO_URI="git://github.com/ddemidov/vexcl.git"
-EGIT_BRANCH="master"
+EGIT_REPO_URI="git://github.com/ddemidov/${PN}
+             https://github.com/ddemidov/${PN}"
+EGIT_BRANCH="${PV}"
 
 DESCRIPTION="Vector expression template library for OpenCL"
 HOMEPAGE="https://github.com/ddemidov/vexcl"
@@ -15,7 +16,7 @@ SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND="virtual/opencl"
