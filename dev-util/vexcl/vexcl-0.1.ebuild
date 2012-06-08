@@ -8,7 +8,7 @@ inherit git-2
 
 EGIT_REPO_URI="git://github.com/ddemidov/${PN}
              https://github.com/ddemidov/${PN}"
-EGIT_BRANCH="${PV}"
+EGIT_COMMIT="${PV}"
 
 DESCRIPTION="Vector expression template library for OpenCL"
 HOMEPAGE="https://github.com/ddemidov/vexcl"
