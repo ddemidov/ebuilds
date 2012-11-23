@@ -17,7 +17,7 @@ SRC_URI=""
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
-IUSE=""
+IUSE="doc"
 
 DEPEND="virtual/opencl"
 RDEPEND="${DEPEND}"
@@ -25,4 +25,7 @@ RDEPEND="${DEPEND}"
 src_install() {
 	insinto /usr/include
 	doins -r viennacl
+	if use doc; then
+		dodoc doc/viennacl.pdf
+	fi
 }
