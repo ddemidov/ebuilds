@@ -6,11 +6,10 @@ EAPI=4
 
 inherit git-2
 
-EGIT_REPO_URI="git://github.com/ddemidov/${PN}
-             https://github.com/ddemidov/${PN}"
+EGIT_REPO_URI="git://github.com/ddemidov/vexcl https://github.com/ddemidov/vexcl"
 EGIT_COMMIT="${PV}"
 
-DESCRIPTION="Vector expression template library for OpenCL"
+DESCRIPTION="VexCL - Vector expression template library for OpenCL"
 HOMEPAGE="https://github.com/ddemidov/vexcl"
 SRC_URI=""
 
@@ -24,5 +23,5 @@ RDEPEND="${DEPEND}"
 
 src_install() {
 	insinto /usr/include/vexcl
-	doins vexcl/*.hpp
+	doins -r vexcl
 }
