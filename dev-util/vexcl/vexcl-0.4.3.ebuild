@@ -22,6 +22,6 @@ DEPEND="virtual/opencl"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/include/vexcl
+	insinto /usr/include/
 	doins -r vexcl
 }
