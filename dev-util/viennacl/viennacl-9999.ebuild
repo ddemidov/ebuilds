@@ -7,7 +7,6 @@ EAPI=4
 inherit git-2 cmake-utils
 
 EGIT_REPO_URI="git://viennacl.git.sourceforge.net/gitroot/viennacl/viennacl"
-EGIT_COMMIT="release-${PV}"
 
 DESCRIPTION="ViennaCL - A Linear algebra library for computations on GPUs and \
 	         multi-core CPUs"
@@ -19,15 +18,17 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="doc"
 
-DEPEND="virtual/opencl"
+DEPEND="virtual/opencl dev-libs/pugixml"
 RDEPEND="${DEPEND}"
 
 src_unpack() {
 	git-2_src_unpack
+	cd "${S}"
+	epatch "${FILESDIR}"/pugixml.patch
 }
 
 src_compile() {
-	cmake-utils_src_compile
+	cmake-utils_src_compile kernels
 }
 
 src_install() {
