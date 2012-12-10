@@ -1,0 +1,13 @@
+diff --git a/viennacl/io/kernel_parameters.hpp b/viennacl/io/kernel_parameters.hpp
+index 12aee52..c377be5 100644
+--- a/viennacl/io/kernel_parameters.hpp
++++ b/viennacl/io/kernel_parameters.hpp
+@@ -24,7 +24,7 @@
+ */
+ 
+ #include "viennacl/ocl/backend.hpp"
+-#include "pugixml/src/pugixml.hpp"
++#include <pugixml.hpp>
+ 
+ namespace viennacl
+ {
