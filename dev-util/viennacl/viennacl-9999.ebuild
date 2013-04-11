@@ -6,7 +6,7 @@ EAPI=4
 
 inherit git-2 cmake-utils
 
-EGIT_REPO_URI="git://viennacl.git.sourceforge.net/gitroot/viennacl/viennacl"
+EGIT_REPO_URI="https://github.com/viennacl/viennacl-dev.git"
 
 DESCRIPTION="ViennaCL - A Linear algebra library for computations on GPUs and \
 	         multi-core CPUs"
