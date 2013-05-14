@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-inherit bzr
+inherit bzr autotools-utils
 EBZR_REPO_URI="lp:pocl"
 
 DESCRIPTION="Portable Computing Language"
@@ -18,7 +18,16 @@ IUSE="debug"
 DEPEND="sys-devel/clang sys-apps/hwloc"
 RDEPEND="${DEPEND}"
 
+src_configure() {
+	${S}/autogen.sh
+	autotools-utils_src_configure
+}
+
+src_compile() {
+	autotools-utils_src_compile
+}
+
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	autotools-utils_src_install
 }
 
