@@ -4,8 +4,9 @@
 
 EAPI="2"
 
-inherit bzr autotools-utils
-EBZR_REPO_URI="lp:pocl"
+inherit git-2 autotools-utils
+EGIT_REPO_URI="git://github.com/pocl/pocl https://github.com/pocl/pocl"
+EGIT_COMMIT="master"
 
 DESCRIPTION="Portable Computing Language"
 HOMEPAGE="http://pocl.sourceforge.net/"
