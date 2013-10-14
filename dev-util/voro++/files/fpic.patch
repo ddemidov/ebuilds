@@ -1,0 +1,13 @@
+diff --git a/config.mk b/config.mk
+index 4f74162..ef35e3f 100644
+--- a/config.mk
++++ b/config.mk
+@@ -11,7 +11,7 @@
+ CXX=g++
+ 
+ # Flags for the C++ compiler
+-CFLAGS=-Wall -ansi -pedantic -O3
++CFLAGS=-Wall -ansi -pedantic -O3 -fPIC
+ 
+ # Relative include and library paths for compilation of the examples
+ E_INC=-I../../src
