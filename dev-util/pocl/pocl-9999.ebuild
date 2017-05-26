@@ -1,6 +1,5 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 EAPI="2"
 
@@ -20,7 +19,7 @@ DEPEND="sys-devel/clang sys-apps/hwloc"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	${S}/autogen.sh
+	"${S}"/autogen.sh
 	autotools-utils_src_configure
 }
 
@@ -31,4 +30,3 @@ src_compile() {
 src_install() {
 	autotools-utils_src_install
 }
-

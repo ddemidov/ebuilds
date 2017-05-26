@@ -1,8 +1,7 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=4
+EAPI=6
 
 inherit eutils
 
@@ -15,9 +14,10 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 
 src_prepare() {
-	epatch ${FILESDIR}/fpic.patch
+	eapply "${FILESDIR}"/fpic.patch
+	eapply_user
 }
 
 src_install() {
-	emake PREFIX="${D}/usr" install || die "Install failed"
+	emake PREFIX="${D}/usr" install
 }
