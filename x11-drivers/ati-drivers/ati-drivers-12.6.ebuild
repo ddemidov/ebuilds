@@ -1,6 +1,5 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/ati-drivers/Attic/ati-drivers-12.6.ebuild,v 1.7 2012/11/28 00:39:21 chithanh Exp $
 
 EAPI=4
 
@@ -20,7 +19,7 @@ else
 fi
 IUSE="debug +modules multilib qt4 static-libs"
 
-LICENSE="AMD GPL-2 QPL-1.0 as-is"
+LICENSE="AMD GPL-2 QPL-1.0"
 KEYWORDS="amd64 x86"
 SLOT="1"
 

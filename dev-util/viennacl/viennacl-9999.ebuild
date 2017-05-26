@@ -1,30 +1,31 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=4
+EAPI=6
 
-inherit git-2 cmake-utils
+inherit git-r3 cmake-utils
 
 EGIT_REPO_URI="https://github.com/viennacl/viennacl-dev.git"
 
 DESCRIPTION="ViennaCL - A Linear algebra library for computations on GPUs and \
 	         multi-core CPUs"
 HOMEPAGE="http://viennacl.sourceforge.net"
-SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="doc"
 
-DEPEND="virtual/opencl dev-libs/pugixml"
+DEPEND="virtual/opencl
+	dev-libs/pugixml
+"
 RDEPEND="${DEPEND}"
 
 src_unpack() {
 	git-2_src_unpack
 	cd "${S}"
-	epatch "${FILESDIR}"/pugixml.patch
+	eapply "${FILESDIR}"/pugixml.patch
+	eapply_user
 }
 
 src_compile() {

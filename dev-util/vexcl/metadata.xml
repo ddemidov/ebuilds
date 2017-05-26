@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>dennis.demidov@gmail.com</email>
+		<name>Denis Demidov</name>
+	</maintainer>
+</pkgmetadata>
